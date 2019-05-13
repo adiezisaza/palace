@@ -290,7 +290,7 @@ var DataEnglishComponent = /** @class */ (function () {
         if (!this.answer.valid) {
             return;
         }
-        var value = this.answer.value;
+        var value = this.answer.value.toLowerCase();
         var equeal = this.infoStart.equeal;
         if (Array.isArray(equeal)) {
             var response = equeal.findIndex(function (element) { return element === value; });
